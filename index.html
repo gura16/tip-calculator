@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <title>tip-calculator</title>
+  </head>
+  <body>
+    <img class="splitter" src="./SPLITTER.png" />
+    <div class="main-container">
+      <div class="first-container">
+        <div class="bill">
+          <h2>Bill</h2>
+          <input type="number" name="bill" class="bill-input" placeholder="0" />
+        </div>
+        <div class="tip-container">
+          <h2>Select Tip %</h2>
+        </div>
+        <div id="tipPercentage" class="button-container">
+          <button class="procent">5%</button>
+          <button class="procent">10%</button>
+          <button class="procent">15%</button>
+          <button class="procent">25%</button>
+          <button class="procent">50%</button>
+          <input type="number" min="0" class="costom" placeholder="Custom" />
+        </div>
+        <div class="people">
+          <div class="peopleerror">
+            <h2>Number of People</h2>
+            <p class="error">Can’t be zero</p>
+          </div>
+          <input
+            type="number"
+            min="0"
+            name="people"
+            class="people-input"
+            placeholder="0"
+          />
+        </div>
+      </div>
+      <div class="last-container">
+        <div class="person-amount">
+          <div>
+            <p class="tip">Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div id="tipAmount" class="amount-input">$0.00</div>
+        </div>
+        <div class="total-amount">
+          <div>
+            <p class="tip">Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div id="totalAmount" class="amount-input">$0.00</div>
+        </div>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+  </body>
+</html>
