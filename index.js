@@ -39,7 +39,7 @@ people.addEventListener("input", function (e) {
 
 function calculate() {
   if (billAmount !== 0 && peopleAmount !== 0 && percent !== 0) {
-    tipAmount = billAmount / percent / peopleAmount;
+    tipAmount = (billAmount * (percent / 100)) / peopleAmount;
     tipDisplay.innerHTML = "$" + tipAmount.toFixed(2);
     billPerson = billAmount / peopleAmount + tipAmount;
     billDisplay.innerHTML = "$" + billPerson.toFixed(2);
